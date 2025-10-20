@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -768,7 +768,7 @@
     <div class="container">
         <!-- Header Section -->
         <header>
-            <img src="https://i.imgur.com/5X5p5p5.png" alt="Logo Trường" class="header-logo">
+            <img src="https://i.postimg.cc/zGwcmPH1/image.png" alt="Logo Trường" class="header-logo">
             <div class="header-content">
                 <div class="header-icon">
                     <i class="fas fa-graduation-cap"></i>
