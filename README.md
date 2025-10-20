@@ -773,9 +773,9 @@
                 <div class="header-icon">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
-                <h1 class="glowing-text">VINH DANH</h1>
+                <h1 class="glowing-text">BẢNG VINH DANH</h1>
                 <p class="subtitle">Học Sinh Xuất Sắc - Nhiều Năm Học</p>
-                <p class="subtitle">Trường THPT Chuyên ABC</p>
+                <p class="subtitle">Trường THCS Nguyễn Khuyến</p>
                 <div class="header-decoration"></div>
             </div>
         </header>
@@ -793,35 +793,30 @@
                     <div class="large-year" onclick="showStudents('2023-2024')">
                         <i class="fas fa-star year-icon"></i>
                         <div class="year-period">2025-2026</div>
-                        <div class="year-label">Năm học hiện tại</div>
                     </div>
                     
                     <!-- Năm học 2022-2023 -->
                     <div class="large-year" onclick="showStudents('2022-2023')">
                         <i class="fas fa-trophy year-icon"></i>
                         <div class="year-period">2026-2027</div>
-                        <div class="year-label">Năm học trước</div>
                     </div>
                     
                     <!-- Năm học 2021-2022 -->
                     <div class="large-year" onclick="showStudents('2021-2022')">
                         <i class="fas fa-award year-icon"></i>
                         <div class="year-period">2027-2028</div>
-                        <div class="year-label">Năm học trước</div>
                     </div>
 
                     <!-- Năm học 2020-2021 -->
                     <div class="large-year" onclick="showStudents('2020-2021')">
                         <i class="fas fa-medal year-icon"></i>
                         <div class="year-period">2028-2029</div>
-                        <div class="year-label">Năm học trước</div>
                     </div>
 
                     <!-- Năm học 2019-2020 -->
                     <div class="large-year" onclick="showStudents('2019-2020')">
                         <i class="fas fa-crown year-icon"></i>
                         <div class="year-period">2029-2030</div>
-                        <div class="year-label">Năm học trước</div>
                     </div>
                 </div>
             </div>
