@@ -1,4 +1,3 @@
-
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -789,32 +788,32 @@
                 </h2>
                 
                 <div class="large-years">
-                    <!-- Năm học 2023-2024 -->
-                    <div class="large-year" onclick="showStudents('2023-2024')">
+                    <!-- Năm học 2025-2026 -->
+                    <div class="large-year" onclick="showStudents('2025-2026')">
                         <i class="fas fa-star year-icon"></i>
                         <div class="year-period">2025-2026</div>
                     </div>
                     
-                    <!-- Năm học 2022-2023 -->
-                    <div class="large-year" onclick="showStudents('2022-2023')">
+                    <!-- Năm học 2026-2027 -->
+                    <div class="large-year" onclick="showStudents('2026-2027')">
                         <i class="fas fa-trophy year-icon"></i>
                         <div class="year-period">2026-2027</div>
                     </div>
                     
-                    <!-- Năm học 2021-2022 -->
-                    <div class="large-year" onclick="showStudents('2021-2022')">
+                    <!-- Năm học 2027-2028 -->
+                    <div class="large-year" onclick="showStudents('2027-2028')">
                         <i class="fas fa-award year-icon"></i>
                         <div class="year-period">2027-2028</div>
                     </div>
 
-                    <!-- Năm học 2020-2021 -->
-                    <div class="large-year" onclick="showStudents('2020-2021')">
+                    <!-- Năm học 2028-2029 -->
+                    <div class="large-year" onclick="showStudents('2028-2029')">
                         <i class="fas fa-medal year-icon"></i>
                         <div class="year-period">2028-2029</div>
                     </div>
 
-                    <!-- Năm học 2019-2020 -->
-                    <div class="large-year" onclick="showStudents('2019-2020')">
+                    <!-- Năm học 2029-2030 -->
+                    <div class="large-year" onclick="showStudents('2029-2030')">
                         <i class="fas fa-crown year-icon"></i>
                         <div class="year-period">2029-2030</div>
                     </div>
@@ -827,7 +826,7 @@
                     <i class="fas fa-users"></i>DANH SÁCH HỌC SINH XUẤT SẮC
                 </h2>
                 
-                <h3 class="year-title" id="selectedYearTitle">NĂM HỌC 2023-2024</h3>
+                <h3 class="year-title" id="selectedYearTitle">NĂM HỌC 2025-2026</h3>
                 
                 <div class="students-grid" id="studentsGrid">
                     <!-- Student cards will be generated here by JavaScript -->
@@ -846,86 +845,96 @@
         
     <script>
         // ===== DỮ LIỆU HỌC SINH MẪU =====
-        // Bạn có thể thêm dữ liệu thực tế vào đây sau
+        // Đã thêm thuộc tính gender để phân biệt ảnh nam/nữ
         const studentsData = {
-            "2023-2024": [
+            "2025-2026": [
                 {
                     name: "NGUYỄN VĂN A",
                     class: "12A1",
                     achievement: "Huy chương Vàng Toán Quốc gia, Giải Nhất Tin học",
                     teacher: "Cô Nguyễn Thị B",
-                    score: "9.5"
+                    score: "9.5",
+                    gender: "male"
                 },
                 {
                     name: "TRẦN THỊ B",
                     class: "12A2", 
                     achievement: "Huy chương Bạc Vật lý, Giải Nhì Hóa học",
                     teacher: "Thầy Phạm Văn C",
-                    score: "9.2"
+                    score: "9.2",
+                    gender: "female"
                 }
             ],
-            "2022-2023": [
+            "2026-2027": [
                 {
                     name: "LÊ VĂN C",
                     class: "12A1",
                     achievement: "Huy chương Vàng Olympic Toán, Giải Nhất Vật lý",
                     teacher: "Cô Trần Thị D",
-                    score: "9.6"
+                    score: "9.6",
+                    gender: "male"
                 },
                 {
                     name: "PHẠM THỊ D",
                     class: "12A3",
                     achievement: "Huy chương Bạc Hóa học, Giải Ba Sinh học",
                     teacher: "Thầy Nguyễn Văn E",
-                    score: "9.1"
+                    score: "9.1",
+                    gender: "female"
                 }
             ],
-            "2021-2022": [
+            "2027-2028": [
                 {
                     name: "HOÀNG VĂN E",
                     class: "12A2",
                     achievement: "Giải Nhất Quốc gia môn Toán, Huy chương Vàng Tin học",
                     teacher: "Cô Lê Thị F",
-                    score: "9.7"
+                    score: "9.7",
+                    gender: "male"
                 },
                 {
                     name: "VŨ THỊ F",
                     class: "12A1",
                     achievement: "Huy chương Bạc Vật lý, Giải Nhì Hóa học",
                     teacher: "Thầy Đặng Văn G",
-                    score: "9.3"
+                    score: "9.3",
+                    gender: "female"
                 }
             ],
-            "2020-2021": [
+            "2028-2029": [
                 {
                     name: "ĐẶNG VĂN G",
                     class: "12A3",
                     achievement: "Huy chương Vàng Toán Quốc tế, Giải Nhất Vật lý",
                     teacher: "Cô Phan Thị H",
-                    score: "9.8"
+                    score: "9.8",
+                    gender: "male"
                 },
                 {
                     name: "PHAN THỊ H",
                     class: "12A2",
                     achievement: "Huy chương Bạc Hóa học, Giải Ba Sinh học",
                     teacher: "Thầy Bùi Văn I",
-                    score: "9.4"
+                    score: "9.4",
+                    gender: "female"
                 }
             ],
-            "2019-2020": [
+            "2029-2030": [
                 {
                     name: "BÙI VĂN I",
                     class: "12A1",
                     achievement: "Giải Nhất Quốc gia môn Toán, Huy chương Vàng Tin học",
                     teacher: "Cô Võ Thị K",
-                    score: "9.6"
+                    score: "9.6",
+                    gender: "male"
                 },
                 {
                     name: "VÕ THỊ K",
                     class: "12A3",
                     achievement: "Huy chương Bạc Vật lý, Giải Nhì Hóa học",
                     teacher: "Thầy Ngô Văn L",
-                    score: "9.2"
+                    score: "9.2",
+                    gender: "female"
                 }
             ]
         };
@@ -952,16 +961,17 @@
                 const card = document.createElement('div');
                 card.classList.add('student-card');
                 
-                // Tạo hình ảnh ngẫu nhiên dựa trên index
-                const gender = index % 2 === 0 ? 'men' : 'women';
-                const imgIndex = (index % 50) + 1;
+                // Xác định ảnh dựa trên giới tính
+                const imageUrl = student.gender === 'male' 
+                    ? 'https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png'
+                    : 'https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png';
                 
                 // Lấy thành tích đầu tiên để hiển thị badge
                 const firstAchievement = student.achievement.split(',')[0];
                 
                 card.innerHTML = `
                     <i class="fas fa-user-graduate student-icon"></i>
-                    <img src="https://randomuser.me/api/portraits/${gender}/${imgIndex}.jpg" alt="${student.name}" class="student-image">
+                    <img src="${imageUrl}" alt="${student.name}" class="student-image">
                     <h3>${student.name}</h3>
                     <p><strong>Lớp:</strong> ${student.class}</p>
                     <p><strong>Thành tích:</strong> ${student.achievement}</p>
@@ -1029,11 +1039,11 @@
             
             console.log("=== TRANG CHÍNH HỌC SINH XUẤT SẮC ===");
             console.log("Có 5 năm học để lựa chọn:");
-            console.log("- 2023-2024 (Năm học hiện tại)");
-            console.log("- 2022-2023");
-            console.log("- 2021-2022"); 
-            console.log("- 2020-2021");
-            console.log("- 2019-2020");
+            console.log("- 2025-2026");
+            console.log("- 2026-2027");
+            console.log("- 2027-2028"); 
+            console.log("- 2028-2029");
+            console.log("- 2029-2030");
             console.log("Mỗi năm học đều có nút QUAY LẠI TRANG CHÍNH");
         });
     </script>
