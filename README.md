@@ -973,10 +973,6 @@
                     <i class="fas fa-user-graduate student-icon"></i>
                     <img src="${imageUrl}" alt="${student.name}" class="student-image">
                     <h3>${student.name}</h3>
-                    <p><strong>Lớp:</strong> ${student.class}</p>
-                    <p><strong>Thành tích:</strong> ${student.achievement}</p>
-                    <p><strong>Giáo viên:</strong> ${student.teacher}</p>
-                    <p><strong>Điểm TB:</strong> ${student.score}</p>
                     <div class="achievement-badge">${firstAchievement}</div>
                 `;
                 
