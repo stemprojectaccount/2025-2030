@@ -186,14 +186,11 @@
                 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,215,0,0.1)"/></svg>');
             color: var(--text-light);
             text-align: center;
-            padding: 40px 20px;
+            padding: 120px 20px 100px;
             position: relative;
             overflow: hidden;
             border-bottom: 1px solid rgba(255, 215, 0, 0.3);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         
         header::before {
@@ -212,25 +209,14 @@
         .header-content {
             position: relative;
             z-index: 2;
-            width: 100%;
-            max-width: 1200px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-            width: 100%;
         }
         
         .header-logo {
-            height: 180px;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            height: 250px;
             width: auto;
-            max-width: 90%;
             z-index: 10;
             filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.7));
             transition: var(--transition-medium);
@@ -238,7 +224,6 @@
             background: rgba(255, 255, 255, 0.1);
             padding: 10px;
             backdrop-filter: blur(10px);
-            object-fit: contain;
         }
         
         .header-logo:hover {
@@ -249,7 +234,7 @@
         .header-icon {
             font-size: 4rem;
             color: var(--gold-color);
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
             animation: float 3s ease-in-out infinite;
         }
@@ -265,7 +250,7 @@
         
         /* CHỈNH SỬA: Làm chữ VINH DANH to hơn */
         .glowing-text {
-            font-size: 5rem;
+            font-size: 6rem; /* Tăng từ 5rem lên 7rem */
             margin-bottom: 20px;
             text-shadow: 0 0 10px rgba(254 , 224 , 255 , 0 ), 0 0 20px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0 );
             position: relative;
@@ -276,7 +261,6 @@
             letter-spacing: 2px;
             animation: glow 3s ease-in-out infinite alternate;
             font-family: 'Playfair Display', serif;
-            text-align: center;
         }
         
         @keyframes glow {
@@ -288,20 +272,17 @@
             }
         }
         
-        /* CHỈNH SỬA: Đổi màu chữ thành màu trắng */
+        /* CHỈNH SỬA: Làm chữ "HỌC SINH XUẤT SẮC CÁC NĂM HỌC TRƯỜNG THCS NGUYỄN KHUYẾN - XÃ EA KAR - TỈNH ĐẮK LẮK" màu trắng */
         .subtitle {
-            font-size: 2rem;
+            font-size: 2.2rem; /* Đảm bảo cùng kích thước */
             margin-bottom: 15px;
             position: relative;
             color: #FFFFFF; /* Màu trắng */
-            font-weight: 600;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+            font-weight: 600; /* Giữ nguyên độ đậm */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5); /* Hiệu ứng bóng trắng */
             padding: 5px 0;
             letter-spacing: 1px;
             font-family: 'Playfair Display', serif;
-            line-height: 1.4;
-            text-align: center;
-            width: 100%;
         }
         
         .header-decoration {
@@ -320,15 +301,15 @@
             justify-content: center;
             align-items: center;
             min-height: 80vh;
-            padding: 40px 20px;
+            padding: 80px 20px;
             flex-direction: column;
-            gap: 60px;
+            gap: 100px;
         }
         
         .section-title {
-            font-size: 3rem;
+            font-size: 3.5rem;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
             background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -363,7 +344,7 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 50px;
             width: 100%;
             max-width: 1600px;
         }
@@ -371,20 +352,20 @@
         .large-year {
             background: linear-gradient(135deg, rgba(58, 109, 201, 0.8), rgba(42, 77, 155, 0.9));
             border-radius: 25px;
-            width: 300px;
-            height: 350px;
+            width: 320px;
+            height: 380px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: bold;
             border: 2px solid rgba(255, 215, 0, 0.4);
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 215, 0, 0.2);
             cursor: pointer;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             position: relative;
             overflow: hidden;
         }
@@ -411,8 +392,8 @@
         }
         
         .large-year .year-icon {
-            font-size: 6rem;
-            margin-bottom: 25px;
+            font-size: 7rem;
+            margin-bottom: 30px;
             color: #FFD700;
             text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
             filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
@@ -425,7 +406,7 @@
         }
         
         .large-year .year-period {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 15px;
             background: linear-gradient(45deg, #FFD700, #FFA500);
             -webkit-background-clip: text;
@@ -440,36 +421,139 @@
             font-weight: 500;
         }
         
-        /* ===== MASTERS/PHD BUTTON STYLES ===== */
-        .masters-phd-section {
+        /* ===== STUDENT CARDS STYLES ===== */
+        .students-section {
+            display: none;
+            width: 100%;
+            max-width: 1400px;
+            text-align: center;
+        }
+        
+        .year-title {
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .student-card {
+            background: linear-gradient(135deg, rgba(58, 109, 201, 0.8), rgba(42, 77, 155, 0.9));
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 215, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 320px;
+        }
+        
+        .student-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: translateX(-100%) skewX(-15deg);
+            transition: transform 0.8s;
+        }
+        
+        .student-card:hover::before {
+            transform: translateX(100%) skewX(-15deg);
+        }
+        
+        .student-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+        
+        .student-icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+            filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.5));
+        }
+        
+        .student-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid rgba(255, 215, 0, 0.6);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+        
+        .student-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        .achievement-badge {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #1a2a6c;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* ===== BACK BUTTON STYLES ===== */
+        .back-section, .back-to-board-section {
             width: 100%;
             text-align: center;
             margin-top: 30px;
         }
         
-        .masters-phd-button {
+        .back-button, .back-to-board-button {
             background: linear-gradient(135deg, rgba(255, 140, 66, 0.9), rgba(232, 106, 51, 0.9));
             border-radius: 35px;
-            width: 600px;
-            height: 200px;
+            width: 500px;
+            height: 100px;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
             border: 4px solid rgba(255, 215, 0, 0.7);
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 140, 66, 0.6);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 140, 66, 0.5);
             cursor: pointer;
             text-align: center;
-            padding: 30px;
+            padding: 20px;
             margin: 0 auto;
             position: relative;
             overflow: hidden;
+            text-decoration: none;
+            color: inherit;
         }
         
-        .masters-phd-button::before {
+        .back-button::before, .back-to-board-button::before {
             content: "";
             position: absolute;
             top: 0;
@@ -481,131 +565,125 @@
             transition: transform 0.8s;
         }
         
-        .masters-phd-button:hover::before {
+        .back-button:hover::before, .back-to-board-button:hover::before {
             transform: translateX(100%) skewX(-15deg);
         }
         
-        .masters-phd-button:hover {
-            transform: translateY(-15px) scale(1.1);
-            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 140, 66, 0.8);
+        .back-button:hover, .back-to-board-button:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 140, 66, 0.7);
         }
         
-        .masters-phd-button .button-icon {
-            font-size: 5rem;
-            margin-bottom: 15px;
+        .back-button .button-icon, .back-to-board-button .button-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
             color: #FFD700;
-            text-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
-            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
             transition: all 0.4s;
         }
         
-        .masters-phd-button:hover .button-icon {
-            transform: scale(1.3) rotate(15deg);
-            filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
+        .back-button:hover .button-icon, .back-to-board-button:hover .button-icon {
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9));
         }
         
-        /* CHỈNH SỬA: Tối ưu chữ THẠC SĨ & TIẾN SĨ cho vừa nút */
-        .masters-phd-button .button-text {
+        .back-button .button-text, .back-to-board-button .button-text {
             background: linear-gradient(45deg, #FFD700, #FFA500);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
             line-height: 1.2;
-            font-size: 2.2rem;
-            padding: 0 10px;
         }
         
         /* ===== RESPONSIVE STYLES ===== */
         @media (max-width: 1200px) {
             .large-years {
-                gap: 25px;
+                gap: 40px;
             }
             
             .large-year {
-                width: 260px;
-                height: 300px;
+                width: 280px;
+                height: 340px;
             }
             
-            .masters-phd-button {
-                width: 500px;
-                height: 180px;
-            }
-            
-            .masters-phd-button .button-text {
-                font-size: 2rem;
+            .back-button, .back-to-board-button {
+                width: 450px;
+                height: 90px;
             }
         }
         
         @media (max-width: 992px) {
             .header-logo {
-                height: 150px;
+                position: relative;
+                top: auto;
+                left: auto;
+                margin-bottom: 30px;
+                height: 200px; /* Giảm kích thước logo trên tablet */
             }
             
             .glowing-text {
-                font-size: 4rem;
+                font-size: 5rem;
             }
             
             .subtitle {
-                font-size: 1.8rem;
+                font-size: 1.8rem; /* Điều chỉnh kích thước cho tablet */
             }
             
             .large-years {
-                gap: 20px;
+                gap: 30px;
             }
             
             .large-year {
-                width: 220px;
-                height: 260px;
-                font-size: 2rem;
+                width: 240px;
+                height: 300px;
+                font-size: 2.2rem;
             }
             
             .large-year .year-icon {
                 font-size: 5rem;
             }
             
-            .masters-phd-button {
-                width: 450px;
-                height: 160px;
+            .back-button, .back-to-board-button {
+                width: 400px;
+                height: 80px;
+                font-size: 1.6rem;
+            }
+            
+            .back-button .button-icon, .back-to-board-button .button-icon {
                 font-size: 2.2rem;
-            }
-            
-            .masters-phd-button .button-icon {
-                font-size: 4.5rem;
-            }
-            
-            .masters-phd-button .button-text {
-                font-size: 1.8rem;
             }
         }
         
         @media (max-width: 768px) {
-            header {
-                padding: 30px 15px;
-            }
-            
             .header-logo {
-                height: 120px;
+                height: 150px; /* Giảm kích thước logo trên mobile */
+                position: relative;
+                top: auto;
+                left: auto;
+                margin: 0 auto 20px;
+                display: block;
             }
             
             .glowing-text {
-                font-size: 3rem;
+                font-size: 3.5rem;
             }
             
             .subtitle {
-                font-size: 1.5rem;
+                font-size: 1.5rem; /* Điều chỉnh kích thước cho mobile */
             }
             
             .large-years {
                 flex-direction: column;
-                gap: 20px;
+                gap: 30px;
             }
             
             .large-year {
                 width: 90%;
-                max-width: 300px;
-                height: 180px;
+                max-width: 320px;
+                height: 200px;
                 flex-direction: row;
                 justify-content: space-around;
             }
@@ -615,49 +693,45 @@
                 font-size: 4rem;
             }
             
-            .masters-phd-button {
+            .students-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            
+            .back-button, .back-to-board-button {
                 width: 90%;
-                height: 140px;
+                height: 70px;
+                font-size: 1.4rem;
+            }
+            
+            .back-button .button-icon, .back-to-board-button .button-icon {
                 font-size: 2rem;
             }
             
-            .masters-phd-button .button-icon {
-                font-size: 3.5rem;
-            }
-            
-            .masters-phd-button .button-text {
-                font-size: 1.6rem;
-            }
-            
             .section-title {
-                font-size: 2.2rem;
-            }
-            
-            .main-content {
-                padding: 30px 15px;
-                gap: 40px;
+                font-size: 2.5rem;
             }
         }
         
         @media (max-width: 576px) {
             .header {
-                padding: 25px 10px;
+                padding: 80px 20px 60px;
             }
             
             .header-logo {
-                height: 100px;
+                height: 120px; /* Giảm kích thước logo trên mobile nhỏ */
             }
             
             .glowing-text {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
             
             .subtitle {
-                font-size: 1.3rem;
+                font-size: 1.3rem; /* Điều chỉnh kích thước cho mobile nhỏ */
             }
             
             .large-year {
-                height: 160px;
+                height: 180px;
                 font-size: 1.8rem;
             }
             
@@ -665,63 +739,29 @@
                 font-size: 3.5rem;
             }
             
-            .masters-phd-button {
-                height: 120px;
-                font-size: 1.8rem;
+            .students-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .student-card {
+                min-height: 280px;
                 padding: 20px;
             }
             
-            .masters-phd-button .button-icon {
-                font-size: 3rem;
-            }
-            
-            .masters-phd-button .button-text {
-                font-size: 1.4rem;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
-            
-            .main-content {
-                padding: 20px 10px;
-                gap: 30px;
-            }
-        }
-        
-        @media (max-width: 400px) {
-            .glowing-text {
-                font-size: 2rem;
-            }
-            
-            .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .large-year {
-                height: 140px;
-                font-size: 1.5rem;
-            }
-            
-            .large-year .year-icon {
-                font-size: 2.8rem;
-            }
-            
-            .masters-phd-button {
-                height: 100px;
-                font-size: 1.5rem;
-            }
-            
-            .masters-phd-button .button-icon {
-                font-size: 2.5rem;
-            }
-            
-            .masters-phd-button .button-text {
+            .back-button, .back-to-board-button {
+                height: 60px;
                 font-size: 1.2rem;
+                padding: 15px;
+            }
+            
+            .back-button .button-icon, .back-to-board-button .button-icon {
+                font-size: 1.8rem;
+                margin-right: 10px;
             }
             
             .section-title {
-                font-size: 1.6rem;
+                font-size: 2rem;
             }
         }
     </style>
@@ -736,10 +776,8 @@
     <div class="container">
         <!-- Header Section -->
         <header>
+            <img src="https://i.postimg.cc/zGwcmPH1/image.png" alt="Logo Trường" class="header-logo">
             <div class="header-content">
-                <div class="logo-container">
-                    <img src="https://i.postimg.cc/zGwcmPH1/image.png" alt="Logo Trường" class="header-logo">
-                </div>
                 <div class="header-icon">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
@@ -759,50 +797,228 @@
                 </h2>
                 
                 <div class="large-years">
-                    <!-- Năm học 1 -->
-                    <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2005-2010/')">
+                    <!-- Năm học 2025-2026 -->
+                    <div class="large-year" onclick="showStudents('2025-2026')">
                         <i class="fas fa-star year-icon"></i>
-                        <div class="year-period">2005-2010</div>
+                        <div class="year-period">2025-2026</div>
                     </div>
                     
-                    <!-- Năm học 2 -->
-                    <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2010-2015/')">
+                    <!-- Năm học 2026-2027 -->
+                    <div class="large-year" onclick="showStudents('2026-2027')">
                         <i class="fas fa-trophy year-icon"></i>
-                        <div class="year-period">2010-2015</div>
+                        <div class="year-period">2026-2027</div>
                     </div>
                     
-                    <!-- Năm học 3 -->
-                    <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2015-2020/')">
+                    <!-- Năm học 2027-2028 -->
+                    <div class="large-year" onclick="showStudents('2027-2028')">
                         <i class="fas fa-award year-icon"></i>
-                        <div class="year-period">2015-2020</div>
+                        <div class="year-period">2027-2028</div>
                     </div>
 
-                    <!-- Năm học 4 -->
-                    <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2020-2025/')">
-                        <i class="fas fa-award year-icon"></i>
-                        <div class="year-period">2020-2025</div>
+                    <!-- Năm học 2028-2029 -->
+                    <div class="large-year" onclick="showStudents('2028-2029')">
+                        <i class="fas fa-medal year-icon"></i>
+                        <div class="year-period">2028-2029</div>
                     </div>
 
-                    <!-- Năm học 5 -->
-                    <div class="large-year" onclick="redirectToWebsite('https://stemprojectaccount.github.io/2025-2030/')">
-                        <i class="fas fa-award year-icon"></i>
-                        <div class="year-period">2025-2030</div>
+                    <!-- Năm học 2029-2030 -->
+                    <div class="large-year" onclick="showStudents('2029-2030')">
+                        <i class="fas fa-crown year-icon"></i>
+                        <div class="year-period">2029-2030</div>
                     </div>
+                </div>
+            </div>
+            
+ <!-- Students Section (Hidden by default) -->
+            <div class="students-section" id="studentsSection">
+                <h2 class="section-title">
+                    <i class="fas fa-users"></i>DANH SÁCH HỌC SINH XUẤT SẮC
+                </h2>
+                
+                <h3 class="year-title" id="selectedYearTitle">NĂM HỌC 2023-2024</h3>
+                
+                <div class="students-grid" id="studentsGrid">
+                    <!-- Student cards will be generated here by JavaScript -->
                 </div>
                 
-                <!-- Masters/PhD Button -->
-                <div class="masters-phd-section">
-                    <div class="masters-phd-button" onclick="redirectToWebsite('https://stemprojectaccount.github.io/THAC-SI-TIEN-SI/')">
-                        <i class="fas fa-user-graduate button-icon"></i>
-                        <div class="button-text">THẠC SĨ & TIẾN SĨ</div>
+                <!-- Back Button -->
+                <div class="back-section">
+                    <div class="back-button" onclick="hideStudents()">
+                        <i class="fas fa-arrow-left button-icon"></i>
+                        <div class="button-text">QUAY LẠI </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Back to Honor Board Button -->
+            <div class="back-to-board-section">
+                <a href="https://stemprojectaccount.github.io/BANG-VINH-DANH/" class="back-to-board-button">
+                    <i class="fas fa-home button-icon"></i>
+                    <div class="button-text">QUAY LẠI  </div>
+                </a>
             </div>
         </div>
     </div>
         
     <script>
-        // Tạo hiệu ứng hạt nền
+        // ===== DỮ LIỆU HỌC SINH MẪU =====
+        // Đã thêm thuộc tính gender để phân biệt ảnh nam/nữ
+        const studentsData = {
+            "2025-2026": [
+                {
+                    name: "NGUYỄN VĂN A",
+                    class: "12A1",
+                    achievement: "Huy chương Vàng Toán Quốc gia, Giải Nhất Tin học",
+                    teacher: "Cô Nguyễn Thị B",
+                    score: "9.5",
+                    gender: "male"
+                },
+                {
+                    name: "TRẦN THỊ B",
+                    class: "12A2", 
+                    achievement: "Huy chương Bạc Vật lý, Giải Nhì Hóa học",
+                    teacher: "Thầy Phạm Văn C",
+                    score: "9.2",
+                    gender: "female"
+                }
+            ],
+            "2026-2027": [
+                {
+                    name: "LÊ VĂN C",
+                    class: "12A1",
+                    achievement: "Huy chương Vàng Olympic Toán, Giải Nhất Vật lý",
+                    teacher: "Cô Trần Thị D",
+                    score: "9.6",
+                    gender: "male"
+                },
+                {
+                    name: "PHẠM THỊ D",
+                    class: "12A3",
+                    achievement: "Huy chương Bạc Hóa học, Giải Ba Sinh học",
+                    teacher: "Thầy Nguyễn Văn E",
+                    score: "9.1",
+                    gender: "female"
+                }
+            ],
+            "2027-2028": [
+                {
+                    name: "HOÀNG VĂN E",
+                    class: "12A2",
+                    achievement: "Giải Nhất Quốc gia môn Toán, Huy chương Vàng Tin học",
+                    teacher: "Cô Lê Thị F",
+                    score: "9.7",
+                    gender: "male"
+                },
+                {
+                    name: "VŨ THỊ F",
+                    class: "12A1",
+                    achievement: "Huy chương Bạc Vật lý, Giải Nhì Hóa học",
+                    teacher: "Thầy Đặng Văn G",
+                    score: "9.3",
+                    gender: "female"
+                }
+            ],
+            "2028-2029": [
+                {
+                    name: "ĐẶNG VĂN G",
+                    class: "12A3",
+                    achievement: "Huy chương Vàng Toán Quốc tế, Giải Nhất Vật lý",
+                    teacher: "Cô Phan Thị H",
+                    score: "9.8",
+                    gender: "male"
+                },
+                {
+                    name: "PHAN THỊ H",
+                    class: "12A2",
+                    achievement: "Huy chương Bạc Hóa học, Giải Ba Sinh học",
+                    teacher: "Thầy Bùi Văn I",
+                    score: "9.4",
+                    gender: "female"
+                }
+            ],
+            "2029-2030": [
+                {
+                    name: "BÙI VĂN I",
+                    class: "12A1",
+                    achievement: "Giải Nhất Quốc gia môn Toán, Huy chương Vàng Tin học",
+                    teacher: "Cô Võ Thị K",
+                    score: "9.6",
+                    gender: "male"
+                },
+                {
+                    name: "VÕ THỊ K",
+                    class: "12A3",
+                    achievement: "Huy chương Bạc Vật lý, Giải Nhì Hóa học",
+                    teacher: "Thầy Ngô Văn L",
+                    score: "9.2",
+                    gender: "female"
+                }
+            ]
+        };
+
+
+        // ===== HÀM HIỂN THỊ DANH SÁCH HỌC SINH =====
+        function showStudents(year) {
+            // Ẩn phần chọn năm học
+            document.getElementById('yearSelection').style.display = 'none';
+            
+            // Hiển thị phần danh sách học sinh
+            const studentsSection = document.getElementById('studentsSection');
+            studentsSection.style.display = 'block';
+            
+            // Cập nhật tiêu đề năm học
+            document.getElementById('selectedYearTitle').textContent = `NĂM HỌC ${year}`;
+            
+            // Tạo các card học sinh
+            const studentsGrid = document.getElementById('studentsGrid');
+            studentsGrid.innerHTML = '';
+            
+            const students = studentsData[year] || [];
+            
+            if (students.length === 0) {
+                studentsGrid.innerHTML = `
+                    <div class="no-students-message">
+                        <i class="fas fa-info-circle" style="font-size: 4rem; margin-bottom: 20px; color: #FFD700;"></i>
+                        <h3 style="color: #fff; font-size: 1.8rem;">Chưa có dữ liệu học sinh cho năm học này</h3>
+                        <p style="color: #e0e0ff; font-size: 1.2rem;">Dữ liệu đang được cập nhật...</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            students.forEach((student, index) => {
+                const card = document.createElement('div');
+                card.classList.add('student-card');
+                
+                // Xác định ảnh dựa trên giới tính
+                const imageUrl = student.gender === 'male' 
+                    ? 'https://i.postimg.cc/2Sns9JkF/Chat-GPT-Image-Oct-20-2025-08-20-11-PM.png'
+                    : 'https://i.postimg.cc/fRYGqFzc/Chat-GPT-Image-Oct-20-2025-08-20-23-PM.png';
+                
+                // Lấy thành tích đầu tiên để hiển thị badge
+                const firstAchievement = student.achievement.split(',')[0];
+                
+                card.innerHTML = `
+                    <i class="fas fa-user-graduate student-icon"></i>
+                    <img src="${imageUrl}" alt="${student.name}" class="student-image">
+                    <h3>${student.name}</h3>
+                    <div class="achievement-badge">${firstAchievement}</div>
+                `;
+                
+                studentsGrid.appendChild(card);
+            });
+        }
+
+        // ===== HÀM ẨN DANH SÁCH HỌC SINH =====
+        function hideStudents() {
+            // Ẩn phần danh sách học sinh
+            document.getElementById('studentsSection').style.display = 'none';
+            
+            // Hiển thị phần chọn năm học
+            document.getElementById('yearSelection').style.display = 'block';
+        }
+
+        // ===== TẠO HIỆU ỨNG NỀN =====
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = 50;
@@ -811,27 +1027,17 @@
                 const particle = document.createElement('div');
                 particle.classList.add('particle');
                 
-                // Kích thước ngẫu nhiên
                 const size = Math.random() * 100 + 20;
                 particle.style.width = `${size}px`;
                 particle.style.height = `${size}px`;
-                
-                // Vị trí ngẫu nhiên
                 particle.style.left = `${Math.random() * 100}vw`;
-                
-                // Thời gian animation ngẫu nhiên
-                const duration = Math.random() * 30 + 20;
-                particle.style.animationDuration = `${duration}s`;
-                
-                // Độ trễ ngẫu nhiên
-                const delay = Math.random() * 5;
-                particle.style.animationDelay = `${delay}s`;
+                particle.style.animationDuration = `${Math.random() * 30 + 20}s`;
+                particle.style.animationDelay = `${Math.random() * 5}s`;
                 
                 particlesContainer.appendChild(particle);
             }
         }
         
-        // Tạo các phần tử nổi
         function createFloatingElements() {
             const container = document.getElementById('floatingElements');
             const elementCount = 15;
@@ -840,52 +1046,30 @@
                 const element = document.createElement('div');
                 element.classList.add('floating-element');
                 
-                // Kích thước ngẫu nhiên
                 const size = Math.random() * 150 + 50;
                 element.style.width = `${size}px`;
                 element.style.height = `${size}px`;
-                
-                // Vị trí ngẫu nhiên
                 element.style.left = `${Math.random() * 100}vw`;
-                
-                // Thời gian animation ngẫu nhiên
-                const duration = Math.random() * 40 + 30;
-                element.style.animationDuration = `${duration}s`;
-                
-                // Độ trễ ngẫu nhiên
-                const delay = Math.random() * 10;
-                element.style.animationDelay = `${delay}s`;
+                element.style.animationDuration = `${Math.random() * 40 + 30}s`;
+                element.style.animationDelay = `${Math.random() * 10}s`;
                 
                 container.appendChild(element);
             }
         }
-        
-        // Hàm chuyển hướng đến website (thay thế trang hiện tại)
-        function redirectToWebsite(url) {
-            // Thêm hiệu ứng loading trước khi chuyển trang
-            const container = document.querySelector('.container');
-            container.style.opacity = '0';
-            container.style.transition = 'opacity 0.5s ease';
-            
-            // Chuyển trang sau 0.5s để hiệu ứng loading hoàn tất
-            setTimeout(() => {
-                window.location.href = url;
-            }, 500);
-        }
-        
-        // Khởi tạo khi trang được tải
+
+        // ===== KHỞI TẠO TRANG =====
         document.addEventListener('DOMContentLoaded', function() {
             createParticles();
             createFloatingElements();
             
-            // Thêm hiệu ứng fade in khi trang tải
-            const container = document.querySelector('.container');
-            container.style.opacity = '0';
-            container.style.transition = 'opacity 1s ease';
-            
-            setTimeout(() => {
-                container.style.opacity = '1';
-            }, 100);
+            console.log("=== TRANG CHÍNH HỌC SINH XUẤT SẮC ===");
+            console.log("Có 5 năm học để lựa chọn:");
+            console.log("- 2010-2011");
+            console.log("- 2011-2012");
+            console.log("- 2012-2013"); 
+            console.log("- 2013-2014");
+            console.log("- 2014-2015");
+            console.log("Mỗi năm học đều có nút QUAY LẠI TRANG CHÍNH");
         });
     </script>
 </body>
