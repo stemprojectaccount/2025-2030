@@ -848,7 +848,7 @@
                 <div class="back-section">
                     <div class="back-button" onclick="hideStudents()">
                         <i class="fas fa-arrow-left button-icon"></i>
-                        <div class="button-text">QUAY LẠI TRANG CHÍNH</div>
+                        <div class="button-text">QUAY LẠI </div>
                     </div>
                 </div>
             </div>
